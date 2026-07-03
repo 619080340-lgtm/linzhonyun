@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>福建汉字元素库 · 入口</title>
+  <style>
+    :root {
+      color-scheme: light;
+      --bg-a: #fef7ea;
+      --bg-b: #f3fbff;
+      --ink: #23313a;
+      --muted: rgba(35, 49, 58, 0.68);
+      --card: rgba(255, 255, 255, 0.9);
+      --line: rgba(102, 131, 146, 0.18);
+      --shadow: 0 24px 60px rgba(68, 102, 129, 0.14);
+      --yellow: #ffd66a;
+      --coral: #ff8a78;
+      --blue: #59c9ff;
+      --green: #83e5b5;
+    }
+
+    * { box-sizing: border-box; }
+
+    html, body {
+      margin: 0;
+      min-height: 100%;
+      font-family: "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", system-ui, sans-serif;
+      color: var(--ink);
+      background:
+        radial-gradient(circle at 10% 10%, rgba(255, 214, 106, 0.34), transparent 18%),
+        radial-gradient(circle at 85% 15%, rgba(89, 201, 255, 0.18), transparent 20%),
+        linear-gradient(180deg, var(--bg-b), var(--bg-a));
+    }
+
+    body {
+      display: grid;
+      place-items: center;
+      padding: 24px;
+    }
+
+    .card {
+      width: min(720px, 100%);
+      border-radius: 32px;
+      padding: 28px;
+      background: var(--card);
+      border: 1px solid var(--line);
+      box-shadow: var(--shadow);
+      backdrop-filter: blur(14px);
+    }
+
+    .kicker {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      padding: 8px 14px;
+      border-radius: 999px;
+      background: linear-gradient(90deg, rgba(89, 201, 255, 0.16), rgba(131, 229, 181, 0.16));
+      border: 1px solid rgba(89, 201, 255, 0.18);
+      font-size: 13px;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+    }
+
+    .kicker::before {
+      content: "";
+      width: 9px;
+      height: 9px;
+      border-radius: 50%;
+      background: var(--green);
+      box-shadow: 0 0 12px rgba(101, 199, 144, 0.7);
+    }
+
+    h1 {
+      margin: 18px 0 10px;
+      font-size: clamp(32px, 4vw, 52px);
+      line-height: 1.05;
+    }
+
+    p {
+      margin: 0 0 18px;
+      color: var(--muted);
+      line-height: 1.75;
+      font-size: 16px;
+    }
+
+    .actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-top: 20px;
+    }
+
+    a.btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 46px;
+      padding: 0 18px;
+      border-radius: 999px;
+      text-decoration: none;
+      font-weight: 800;
+      letter-spacing: 0.04em;
+      color: var(--ink);
+      background: linear-gradient(90deg, var(--yellow), #fff0a6);
+      border: 1px solid rgba(255, 214, 106, 0.5);
+      box-shadow: 0 12px 26px rgba(255, 214, 106, 0.18);
+    }
+
+    a.btn.secondary {
+      background: rgba(255, 255, 255, 0.88);
+      border-color: var(--line);
+      box-shadow: none;
+    }
+
+    .tip {
+      margin-top: 18px;
+      padding: 14px 16px;
+      border-radius: 18px;
+      background: rgba(255, 255, 255, 0.82);
+      border: 1px dashed rgba(102, 131, 146, 0.18);
+      color: var(--muted);
+      line-height: 1.7;
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+  <main class="card">
+    <div class="kicker">Windows 可直接复制版入口</div>
+    <h1>福建汉字元素库</h1>
+    <p>
+      这个文件夹可以直接整体搬到 Windows 电脑上使用。
+      双击下面的按钮，或者在浏览器里打开这个入口页，就会进入真正的汉字元素库。
+    </p>
+
+    <div class="actions">
+      <a class="btn" href="./fujian-hanzi-element-library-tech.html">打开元素库</a>
+      <a class="btn secondary" href="./fujian-hanzi-element-library-tech.html" target="_blank" rel="noreferrer">新窗口打开</a>
+    </div>
+
+    <div class="tip">
+      使用时请保持这个文件和 <strong>未命名文件夹/素材库</strong> 在同一个总文件夹里。
+      这样在 Windows 上也能继续看到全部卡片和五体图片。
+      如果你点开后没有马上进入主页面，就直接点上面的“打开元素库”按钮。
+    </div>
+  </main>
+</body>
+</html>
